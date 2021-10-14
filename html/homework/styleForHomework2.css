@@ -1,0 +1,34 @@
+body {
+    background: antiquewhite;
+    font-family: "Agency FB";
+}
+
+.header {
+    color: red;
+    text-align: center;
+}
+
+h1 {
+    font-size: xxx-large;
+}
+
+p {
+    border: 5px solid red;
+    font-size: large;
+}
+
+.image {
+    width: 100%;
+
+}
+
+ul {
+    display: -webkit-flex;
+    font-size: large;
+    list-style: none;
+
+
+}
+a{
+    color: red;
+}
