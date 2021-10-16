@@ -1,0 +1,54 @@
+html {
+    font-family: Bahnschrift;
+    color: wheat;
+    background-image: url("https://images.pexels.com/photos/3473569/pexels-photo-3473569.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: repeat;
+
+}
+h1.h1{
+    font-size: 120px;
+}
+
+.first {
+    margin-bottom: 200px;
+}
+
+
+.center {
+    text-align: center;
+    font-size: 70px;
+}
+
+.threeimg {
+    display: flex;
+}
+
+.img33 {
+    width: 33%;
+    height: 600px;
+    margin: 10px;
+}
+p{
+    font-size: 20px;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+li{
+    margin: 50px;
+}
+.books{
+    margin-left: 130px;
+}
+.films{
+    width: 33%;
+    display: flex;
+    max-height: 600px;
+    margin: 60px ;
+
+}
+.img3{
+    margin: 80px;
+    width: 300px;
+}
