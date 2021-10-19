@@ -1,0 +1,49 @@
+.main {
+    width: 1400px;
+    height: 500px;
+    background: aqua;
+
+}
+
+.main1 {
+    display: block;
+    box-sizing: border-box;
+}
+
+.first {
+    height: 300px;
+    background: brown;
+    align-self: flex-start;
+}
+
+.nav {
+    background: yellow;
+    align-self: flex-end;
+    height: 200px;
+}
+
+.margin {
+    margin: 0;
+
+}
+
+.main2 {
+    display: flex;
+    justify-content: flex-start;
+}
+.center1{
+    height: 500px;
+    width: 1000px;
+    background: violet;
+}
+.center2{
+    width: 400px;
+    height: 500px;
+    background: red;
+}
+.footer{
+    width: 1400px;
+    height: 100px;
+    background: antiquewhite;
+}
+

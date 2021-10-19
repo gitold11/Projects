@@ -1,0 +1,29 @@
+.main{
+    width: 1500px;
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+}
+.widget{
+    width: 1500px;
+    height: 400px;
+    background: blue;
+}
+.small-w{
+    width: 1500px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+.small{
+    width: 400px;
+    height: 250px;
+    background: lightblue;
+    margin-top: 80px;
+
+}
+.contact{
+    width: 1500px;
+    background: blue;
+    height: 800px;
+}
