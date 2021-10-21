@@ -1,0 +1,47 @@
+
+.main {
+    display: flex;
+    width: 1000px;
+    background: red;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    justify-content: center;
+    height: 100px;
+    background: yellow;
+}
+
+.nav_father {
+    display: flex;
+
+}
+
+.nav_bottom {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.images {
+    display: flex;
+}
+
+.images2 {
+    width: 20%;
+    height: 320px;
+    background: orange;
+}
+
+.B_NEW {
+    background: gray;
+    height: 100px;
+}
+
+.one {
+    width: 32%;
+    height: 200px;
+    background: green;
+    margin: 10px;
+}

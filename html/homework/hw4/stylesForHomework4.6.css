@@ -1,0 +1,37 @@
+
+.main {
+    width: 800px;
+    display: block;
+    background: red;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+
+}
+
+.first {
+    width: 50%;
+    height: 500px;
+    background: yellow;
+    margin: 15px;
+}
+
+.middle {
+    height: 300px;
+    width: 95%;
+    background: orange;
+    margin-left: 3%;
+}
+
+.bottom {
+    display: flex;
+}
+
+.one {
+    width: 32%;
+    height: 150px;
+    background: cornflowerblue;
+    margin: 1%;
+}

@@ -1,0 +1,33 @@
+.main{
+    width: 1000px;
+}
+.middle{
+    width: 100%;
+    display: flex;
+}
+.middle__left{
+    width: 20%;
+    background: hotpink;
+}
+.middle__right{
+    width: 80%;
+}
+.middle__right_block{
+    height: 250px;
+    background: cornflowerblue;
+}
+.footer{
+    margin-top:15px;
+}
+.h200{
+    height: 200px;
+}
+.h500{
+    height: 500px;
+}
+.bg{
+    background: lightgreen;
+}
+.m5{
+    margin: 5px;
+}

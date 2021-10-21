@@ -1,0 +1,32 @@
+.main{
+    width: 1000px;
+}
+
+.header__header{
+    height: 200px;
+}
+.middle{
+    display: flex;
+}
+.middle__left{
+    width: 70%;
+    background: lightblue;
+}
+.middle__right{
+    width: 30%;
+}
+.w100p{
+    width: 100%;
+}
+.h150{
+    height: 150px;
+}
+.h600{
+    height: 600px;
+}
+.bgblue{
+    background: blue;
+}
+.bgcornf{
+    background: cornflowerblue;
+}

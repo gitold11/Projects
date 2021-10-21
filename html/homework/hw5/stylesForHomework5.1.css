@@ -1,0 +1,27 @@
+.main{
+    width: 1000px;
+    display: block;
+    background: black;
+}
+.header{
+    height: 200px;
+}
+.bottom{
+    display: flex;
+}
+.bottom__left{
+    width: 78%;
+    margin-right: 5px;
+}
+.bottom__right{
+    width: 28%;
+}
+.bg{
+    background: grey;
+}
+.m5{
+    margin: 5px;
+}
+.h600{
+    height: 600px;
+}

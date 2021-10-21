@@ -1,0 +1,25 @@
+.main{
+    width: 1000px;
+}
+.middle{
+    display: flex;
+    height: 300px;
+    justify-content: space-between;
+}
+.middle__box{
+    margin-top: 25px;
+    width: 32%;
+    background: blue;
+}
+.footer{
+    height: 500px;
+}
+.w100{
+    width: 100%;
+}
+.h250{
+    height: 250px;
+}
+.bg{
+    background: cornflowerblue;
+}
