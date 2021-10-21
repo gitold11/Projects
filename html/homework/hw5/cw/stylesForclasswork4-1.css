@@ -1,0 +1,93 @@
+.main{
+    width: 1000px;
+}
+.main__top{
+    background: lightblue;
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header__left{
+    width: 80px;
+    height: 10px;
+    background: grey;
+    border-radius: 30%;
+    margin-right: 20px;
+}
+.header__right{
+    width: 40px;
+    height: 10px;
+    background: grey;
+    border-radius: 30%;
+}
+.content{
+    display: flex;
+    justify-content: center;
+
+}
+.box{
+    margin: 30px;
+}
+.box__main{
+    width: 100px;
+    height: 100px;
+    background: grey;
+    border-radius: 15%;
+}
+.box__under{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.under__left{
+    width: 80px;
+    height: 10px;
+    background: grey;
+    border-radius: 30%;
+    margin-right: 20px;
+}
+.under__right{
+    width: 40px;
+    height: 10px;
+    background: grey;
+    border-radius: 30%;
+}
+.main__bottom{
+    display: flex;
+    justify-content: space-evenly;
+    background: darkblue;
+
+}
+.round__top{
+    width: 100px;
+    height: 100px;
+    background: grey;
+    border-radius: 50%;
+}
+.round__under_top{
+    display: flex;
+    justify-content: space-evenly;
+}
+.under_top_button{
+    width: 80px;
+    height: 10px;
+    background: grey;
+    border-radius: 30%;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.round__under_bottom{
+    display: flex;
+    justify-content: space-evenly;
+}
+.under_bottom_button{
+    width: 40px;
+    height: 10px;
+    background: grey;
+    border-radius: 30%;
+    margin-top: 15px;
+}
+.round{
+    margin: 40px -84px 40px 0;
+}
