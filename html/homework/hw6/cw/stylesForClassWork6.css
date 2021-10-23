@@ -97,7 +97,10 @@
 
 .block4__content {
     display: flex;
+    justify-content: center;
+    align-items: center;
     column-gap: 50px;
+    flex-wrap: wrap;
 
 }
 
@@ -117,12 +120,14 @@
     max-width: 200px;
 }
 
-.block5 {
 
+.block5 {
     display: flex;
     background-color: darkblue;
     justify-content: center;
+    align-items: center;
     column-gap: 200px;
+    flex-wrap: wrap;
 }
 
 .block5__content {

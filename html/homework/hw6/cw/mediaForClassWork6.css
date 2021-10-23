@@ -1,0 +1,33 @@
+@media screen and (max-width: 480px) {
+    .main {
+        max-width: 480px;
+    }
+
+    .block4__border {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .block1, .block6__top, .block8__top {
+        display: none;
+    }
+
+    .main, .block5, .block4, .block2, .block3, .block6, .block7 {
+        background-color: #e6b1f3;
+    }
+
+    .img, .block2__right_button, .block3__button, .content__block_main {
+        background-color: #da7676;
+    }
+
+    .block5__content p {
+        color: #da7676;
+        font-weight: 800;
+    }
+
+
+}
