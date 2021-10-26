@@ -1,0 +1,214 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Tinos', serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: url("../homework7/img/bg.png") no-repeat center/cover;
+}
+
+.header {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav__mobile{
+    display: none;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.header__right img {
+    width: 20px;
+}
+
+.header__right a {
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.border_btv {
+    border-right: 1px solid #FFFFFF;
+    height: 50px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.info_top {
+    display: flex;
+    column-gap: 10px;
+}
+
+.info p {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.header__right button {
+    width: 150px;
+    height: 50px;
+    background-color: #FF7400;
+    color: #FFFFFF;
+    font-weight: 700;
+    border: none;
+}
+
+.wellcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 122px 709px 299px 175px;
+    color: #D67E35;
+    font-family: Tinos;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.wellcome h2 {
+
+    font-size: 50px;
+
+}
+
+.wellcome h1 {
+
+    font-size: 80px;
+
+}
+
+.wellcome p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    font-family: Open Sans;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.wellcome button {
+    margin-top: 20px;
+    background-color: #FF7400;
+    color: #FFFFFF;
+    width: 140px;
+    height: 50px;
+    border: none;
+}
+
+.wellcome p::before, .wellcome p::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: white;
+}
+
+.blocks {
+    position: absolute;
+    margin-top: 650px;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    width: 100%;
+
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 350px;
+    width: 330px;
+    background-color: #FFFFFF;
+    font-family: Tinos;
+    font-style: normal;
+    font-weight: normal;
+    row-gap: 10px;
+    box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.block p {
+    max-width: 200px;
+    color: #656363;
+}
+
+.block h2 {
+    font-size: large;
+}
+
+.block span {
+    color: #BC9060;
+}
+
+.block img {
+    margin-top: 37px;
+}
