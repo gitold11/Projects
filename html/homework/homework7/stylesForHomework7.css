@@ -15,7 +15,6 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 
@@ -41,8 +40,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+    content: "";
 }
 
 table {
@@ -57,7 +55,7 @@ table {
 }
 
 .main {
-    position: absolute;
+    position: relative;
     height: 100vh;
     width: 100%;
     background: url("../homework7/img/bg.png") no-repeat center/cover;
@@ -126,7 +124,7 @@ table {
     align-items: center;
     margin: 122px 709px 299px 175px;
     color: #D67E35;
-    font-family: Tinos;
+    font-family: Tinos cursive;
     font-style: normal;
     font-weight: normal;
 }
@@ -148,7 +146,7 @@ table {
     justify-content: center;
     align-items: center;
     column-gap: 10px;
-    font-family: Open Sans;
+    font-family: Open Sans cursive;
     font-size: 18px;
     line-height: 25px;
     color: #FFFFFF;
@@ -172,11 +170,11 @@ table {
 
 .blocks {
     position: absolute;
-    margin-top: 650px;
     display: flex;
     justify-content: center;
     column-gap: 30px;
     width: 100%;
+    margin-top: -80px;
 
 }
 
@@ -188,7 +186,7 @@ table {
     height: 350px;
     width: 330px;
     background-color: #FFFFFF;
-    font-family: Tinos;
+    font-family: Tinos cursive;
     font-style: normal;
     font-weight: normal;
     row-gap: 10px;
@@ -211,4 +209,50 @@ table {
 
 .block img {
     margin-top: 37px;
+}
+.history{
+    margin-top: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.food{
+    display: flex;
+    column-gap: 40px;
+}
+.history__left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+    row-gap: 20px;
+    margin-left: 160px;
+
+}
+.history__left h2{
+    font-family: Tinos cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 62px;
+}
+.history__left span{
+    color: #BC9060;
+}
+.history__left p{
+    font-family: Open Sans cursive;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+
+}
+.food_item h2{
+    color: #BC9060;
+}
+.history__right{
+    margin-right: 160px;
 }
