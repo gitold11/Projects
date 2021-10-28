@@ -1,0 +1,88 @@
+@media screen and (max-width: 570px) {
+    .header__left img {
+        max-width: 60px;
+    }
+
+    .wrapper {
+        max-width: 375px;
+        padding: 0 10px;
+    }
+
+    .header {
+        padding-top: 20px;
+    }
+
+    .nav__mobile {
+        row-gap: 3px;
+
+    }
+
+    .nav__mobile span {
+        width: 30px;
+        height: 3px;
+        background-color: #FF7400;
+        border-radius: 2px;
+    }
+
+    .wellcome h1 {
+        font-size: 50px;
+        width: 280px;
+        line-height: 50px;
+
+    }
+
+    .wellcome h2 {
+        font-size: 40px;
+        width: 240px;
+    }
+
+    .wellcome p {
+        width: 180px;
+        line-height: 20px;
+    }
+
+    .wellcome p::before, .wellcome p::after {
+        display: none;
+    }
+
+    .blocks {
+        margin-top: -100px;
+        row-gap: 15px;
+
+    }
+
+    .history {
+        margin-top: 1000px;
+    }
+
+    .history__left {
+        margin: 0;
+    }
+
+    .history__left p {
+        margin-top: 60px;
+    }
+
+    .food {
+        margin-top: 60px;
+    }
+
+    .food_item {
+        text-align: center;
+    }
+
+    .food_item h2 {
+        font-weight: 600;
+        margin-top: 30px;
+        font-size: 60px;
+    }
+
+    .food_item p {
+        font-weight: 600;
+        margin: 0;
+        font-size: 20px;
+    }
+    .history__right{
+        margin: 60px 0;
+    }
+}
