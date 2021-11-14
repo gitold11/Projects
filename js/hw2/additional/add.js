@@ -41,7 +41,6 @@
 //
 // - Маємо будь яке число від -100 , 0 , +100 потрібно перевірити яким є число: позитивним, негативним або нулем
 // напишіть це тернарним оператором
-// let number = 100;
-// number > 0 ? console.log('positive'): console.log('negative')
-
+// let number = -1;
+// number === 0 ? console.log('Zero') : number > 0 ? console.log('Positive') : console.log('Negative');
 
