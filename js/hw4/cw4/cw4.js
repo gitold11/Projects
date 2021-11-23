@@ -37,18 +37,18 @@
 // console.log(largestNumber(array));
 
 // - створити функцію яка повертає найменьше число з масиву
-// let array = [1, 2, 34, 5, 6, 7];
-// function lowestNumber(arr){
-//     let min = arr[0];
-//     for (const element of arr) {
-//         if (element < min) {
-//             min = element;
-//         }
-//     }
-//     return min;
-// }
-//
-// console.log(lowestNumber(array));
+let array = [1, 2, 34, 5, 6, 7];
+function lowestNumber(arr){
+    let min = arr[0];
+    for (const element of arr) {
+        if (element < min) {
+            min = element;
+        }
+    }
+    return min;
+}
+
+console.log(lowestNumber(array));
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 // let array = [1, 21, 32, 43, 54];
@@ -117,7 +117,6 @@
 // }
 //
 // console.log(randomArr(10, 100));
-
 
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 // let array = [1, 21, 32, 43, 54];
