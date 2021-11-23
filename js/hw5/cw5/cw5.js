@@ -117,9 +117,12 @@
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 // let array = [1, 2, 3, 45, 6, 77778, 899];
 // let funcRev = () => {
-//     for (i = array.length - 1; i >= 0; i--) {
-//         console.log(array[i]);
+//     let arrNew = [];
+//     for (i = array.length - 1, newi = 0; i >= 0; i--, newi++) {
+//         arrNew[newi] = array[i];
 //     }
+//     return arrNew;
+//
 // }
-// funcRev();
+// console.log(funcRev());
 
