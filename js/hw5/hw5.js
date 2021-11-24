@@ -24,8 +24,8 @@
 // arrayShower(array);
 
 // - створити функцію яка  створює параграф з текстом. Текст задати через аргумент
-// let text = (typeHere) => ('Have a nice Day)');
-// console.log(text());
+// let text = (typeHere) => (`${typeHere}`);
+// console.log(text('hello okten'));
 
 // - створити функцію яка  створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 // let listCreator = (sometext) => {

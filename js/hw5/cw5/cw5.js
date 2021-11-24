@@ -27,9 +27,9 @@
 
 // - створити функцію яка повертає найбільше число з масиву
 // let arrayNum = [10, 2, 34, 8, 6, 7];
-// let maxNum = () => {
-//     let num = arrayNum[0];
-//     for (let i of arrayNum) {
+// let maxNum = (arr) => {
+//     let num = arr[0];
+//     for (let i of arr) {
 //         if(i > num){
 //             num = i;
 //         }
@@ -37,7 +37,7 @@
 //     }
 //     return num;
 // }
-// console.log(maxNum());
+// console.log(maxNum(arrayNum));
 
 // - створити функцію яка повертає найменьше число з масиву
 // let arrayNum = [10, 8, 34, 8, 6, 7];
@@ -54,14 +54,14 @@
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 // let arrayNum = [10, 10, 170, 10, 1009, 11];
-// let resoult = () => {
+// let resoult = (arr) => {
 //     let num = null;
-//     for (i of arrayNum) {
+//     for (i of arr) {
 //         num = num + i;
 //     }
 //     return num;
 // }
-// console.log(resoult());
+// console.log(resoult(arrayNum));
 
 
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
@@ -95,24 +95,24 @@
 
 // - створити функцію яка заповнює масив рандомними числами
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
+// let addNum = (limit) => {
 // let array = [];
-// let addNum = () => {
-//     for (let i = 0; i < 10; i++) {
+//     for (let i = 0; i < limit; i++) {
 //         array[i] = Math.round(Math.random() * 100);
 //     }
-//     console.log(array);
+//     return array
 // }
-// addNum();
+// console.log(addNum(10));
 
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
-// let array = [];
 // let addArr = (size, limit) => {
+// let array = [];
 //     for (i = 0; i < size; i++) {
 //         array[i] = Math.round(Math.random()*limit);
 //     }
-//     console.log(array);
+//     return array;
 // }
-// addArr(40,1000);
+// console.log(addArr(40, 1000));;
 
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 // let array = [1, 2, 3, 45, 6, 77778, 899];
