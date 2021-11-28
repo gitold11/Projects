@@ -1,14 +1,10 @@
-let arr = [1, 2, 3, 4,10];
 
-function rec(action, arr) {
-    let num = null;
-    for ( i of arr) {
-        num = action(num,i)
-    }
-    return num;
-
+function rec(arr,lenght) {
+if (lenght <= 0){
+    return 0;
+}else return (rec(arr,lenght - 1)+ arr[lenght -1]);
 };
-console.log(rec(function (num, arr) {
-    return num + i
-}, arr));
+let arr = [1, 2, 3, 4,5,10];
+let lenght = arr.length;
+console.log(rec(arr, lenght));
 
