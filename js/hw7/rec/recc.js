@@ -1,9 +1,9 @@
 
-function rec(arr,lenght) {
-if (lenght <= 0){
-    return 0;
-}else return (rec(arr,lenght - 1)+ arr[lenght -1]);
+function rec(arr) {
+arr = arr.toString();
+return arr.length === 0
+    ? 0
+    : +arr[0] + rec(arr.slice(1));
 };
-let arr = [1, 2, 3, 4,5,10];
-let lenght = arr.length;
-console.log(rec(arr, lenght));
+let arr = [12345];
+console.log(rec(arr));
