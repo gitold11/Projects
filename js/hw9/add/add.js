@@ -240,24 +240,34 @@ document.body.appendChild(div);
 for (let element of usersList) {
     let user = document.createElement('div');
     user.classList.add('user');
+
     let id = document.createElement('h3');
     id.innerText = `User id: ${element.id}`;
+
     let name = document.createElement('h2');
     name.innerText = `Name: ${element.name}`;
+
     let username = document.createElement('h2');
     username.innerText = `User name: ${element.username}`;
+
     let email = document.createElement('h3');
     email.innerText = `Email: ${element.email}`;
+
     let address = document.createElement('ul');
     address.innerText = 'Address:'
+
     let street = document.createElement('li');
     street.innerText = `Street: ${element.address.street}`;
+
     let suite = document.createElement('li');
     suite.innerText = element.address.suite;
+
     let city = document.createElement('li');
     city.innerText = `City: ${element.address.city}`;
+
     let zipcode = document.createElement('li');
     zipcode.innerText = `Zipcode: ${element.address.zipcode}`;
+
     let geo = document.createElement('ul');
     geo.innerText = 'Geo:';
     let lat = document.createElement('li');

@@ -208,3 +208,4 @@ buttonVNew.addEventListener('click', function () {
 
 document.body.appendChild(verifyBlockNew);
 verifyBlockNew.append(inpNew, buttonVNew);
+
