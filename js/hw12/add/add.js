@@ -126,11 +126,9 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
                                                 wrap.appendChild(commentDiv);
                                                 commentDiv.append(commentId,commentPostId, commentName, commentBody, commentEmail);
-                                                console.log(comment);
                                             }
                                             ;
                                         });
-                                        console.log(comments);
                                     });
                             };
 
@@ -139,7 +137,6 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
                         });
 
-                        console.log(posts);
                     });
             };
 
