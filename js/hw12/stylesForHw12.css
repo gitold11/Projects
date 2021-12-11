@@ -1,0 +1,19 @@
+.div_post{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dce6ad;
+    width: 20%;
+    text-align: center;
+    font-size: 16px;
+
+}
+.color{
+    background-color: cornsilk;
+}
+
