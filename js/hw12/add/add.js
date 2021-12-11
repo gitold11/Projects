@@ -76,14 +76,79 @@ fetch('https://jsonplaceholder.typicode.com/users')
             let btn = document.createElement('button');
             btn.innerText = 'select';
 
+            btn.onclick = () => {
+                fetch('https://jsonplaceholder.typicode.com/users/' + user.id + '/posts')
+                    .then(posts => posts.json())
+                    .then(posts => {
+                        posts.forEach(post => {
+
+                            let postDiv = document.createElement('div');
+                            postDiv.classList.add('block', 'post_div');
+
+                            let postId = document.createElement('h3');
+                            postId.innerText = `id: ${post.id}`;
+
+                            let postUserId = document.createElement('h3');
+                            postUserId.innerText = `user id: ${post.userId}`;
+
+                            let postBody = document.createElement('h3');
+                            postBody.innerText = `${post.body}`;
+
+                            let postTitle = document.createElement('h3');
+                            postTitle.innerText = `${post.title}`;
+
+                            let postBtn = document.createElement('button');
+                            postBtn.innerText = 'show comments'
+
+                            postBtn.onclick = () => {
+                                fetch('https://jsonplaceholder.typicode.com/comments')
+                                    .then(comments => comments.json())
+                                    .then(comments => {
+                                        comments.forEach(comment => {
+                                            if (post.id === comment.postId) {
+                                                let commentDiv = document.createElement('div');
+                                                commentDiv.classList.add('block','comment');
+
+                                                let commentId = document.createElement('div');
+                                                commentId.innerText = `id: ${comment.id}`;
+
+                                                let commentPostId = document.createElement('div');
+                                                commentPostId.innerText = `post id: ${comment.postId}`;
+
+                                                let commentName = document.createElement('div');
+                                                commentName.innerText = `${comment.name}`;
+
+                                                let commentBody = document.createElement('div');
+                                                commentBody.innerText = `${comment.body}`;
+
+                                                let commentEmail = document.createElement('div');
+                                                commentEmail.innerText = `${comment.email}`;
+
+                                                wrap.appendChild(commentDiv);
+                                                commentDiv.append(commentId,commentPostId, commentName, commentBody, commentEmail);
+                                                console.log(comment);
+                                            }
+                                            ;
+                                        });
+                                        console.log(comments);
+                                    });
+                            };
+
+                            wrap.appendChild(postDiv);
+                            postDiv.append(postUserId, postId, postBody, postTitle, postBtn);
+
+                        });
+
+                        console.log(posts);
+                    });
+            };
 
 
             document.body.appendChild(wrap);
             wrap.appendChild(block);
-            block.append(id,name,userName,email,phone,website,address,company,btn);
-            address.append(city,street,suite,zipcode,geo);
-            geo.append(lat,lng);
-            company.append(companyName,catchPhrase,bs);
-            console.log(user);
+            block.append(id, name, userName, email, phone, website, address, company, btn);
+            address.append(city, street, suite, zipcode, geo);
+            geo.append(lat, lng);
+            company.append(companyName, catchPhrase, bs);
         });
     });

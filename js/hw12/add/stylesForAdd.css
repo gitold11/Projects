@@ -16,3 +16,12 @@
     border: 1px solid black;
 
 }
+.post_div{
+    background-color: cornflowerblue;
+    width: 33%;
+}
+.comment{
+    width: 100%;
+    background-color: red;
+    font-size: 30px;
+}
