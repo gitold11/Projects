@@ -101,7 +101,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
                             postBtn.innerText = 'show comments'
 
                             postBtn.onclick = () => {
-                                fetch('https://jsonplaceholder.typicode.com/comments')
+                                fetch('https://jsonplaceholder.typicode.com/posts/'+ post.id + '/comments')
                                     .then(comments => comments.json())
                                     .then(comments => {
                                         comments.forEach(comment => {
