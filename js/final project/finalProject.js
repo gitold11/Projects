@@ -4,7 +4,37 @@
 // 2 Вывести id,name всех user в index.html. Отдельный блок для каждого user.
 // 3 Добавить каждому блоку кнопку/ссылку , при клике на которую происходит переход на страницу user-details.html,
 // которая имеет детальную информацию про объект на который кликнули
+fetch('https://jsonplaceholder.typicode.com/users')
+    .then(users => users.json())
+    .then(users => {
+        let storage = [];
+        users.forEach(user => {
+            let block = document.createElement('div');
+            block.classList.add('block');
 
+            let infoBlock = document.createElement('div');
+            infoBlock.classList.add('info__block');
+
+            let id = document.createElement('p');
+            id.innerText = `${user.id}.`;
+
+            let name = document.createElement('p');
+            name.innerText = `${user.name}`;
+
+            let btn = document.createElement('button');
+            btn.innerText = 'details'
+
+            btn.onclick = () =>{
+                storage.push(user);
+                localStorage.setItem('storage',JSON.stringify(storage));
+                window.location.href='./user-details.html';
+            };
+
+            document.body.appendChild(block);
+            block.append(infoBlock,btn);
+            infoBlock.append(id,name);
+        });
+    });
 //
 //
 // На странице user-details.html:

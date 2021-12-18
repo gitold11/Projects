@@ -1,0 +1,63 @@
+
+/*// user-details.html - блок с информацией про user вверху страницы. Кнопка ниже, на 90% ширины страницы, по центру.*/
+/*// блоки с краткой информацией про post - в ряд по 5 объектов.*/
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.user__field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 23px;
+    background: darkseagreen;
+    width: 50%;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 10px;
+}
+.user__block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 90%;
+    background-color: lightgray;
+}
+.user__block button{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background: aliceblue;
+    cursor: pointer;
+}
+.title__main_block{
+    padding-top: 40px;
+    background: lightgray;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5px;
+}
+.title__block{
+    width: 34%;
+    font-size: 20px;
+    background: darkseagreen;
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+}
+.title__block button{
+    width: 30%;
+    cursor: pointer;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
