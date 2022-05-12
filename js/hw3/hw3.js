@@ -1,140 +1,161 @@
-// --створити масив з:
-// - з 5 числових значень
-// let array = [1,2,3,4,5];
-// - з 5 стічкових значень
-// let array = ['firts', 'second', 'third', 'fourth', 'fifth']
-// - з 5 значень стрічкового, числового та булевого типу
-// - та вивести його в консоль
-// let array = ['firts', 'second', 'third', 'fourth', 'fifth', 1,2,3,4,5, true, false, true, true, false];
-// console.log(array);
-
-//
-// -- Створити пустий масив. Наповнити його будь-якими значеннями звертаючись до конкретного індексу. Вивести в консоль
-// let emptyarray =[];
-// emptyarray[0] = 'this';
-// emptyarray [1] = 'is';
-// emptyarray [2] = 'your';
-// emptyarray [3] = 'array';
-// emptyarray [4] = 011101101;
-// console.log(emptyarray);
-
 //
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
 // for (let i = 0; i < 10; i++) {
-//     document.write('<div>something</div>');
-// }
+//     document.write(`<div>Some text</div>`)
+// };
 
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
-// for (let i = 0; i < 10; i++){
-//     document.write(`<div>${i} - something</div>`);
-// }
+// for (let i = 1; i <= 10; i++){
+//     document.write(`<div>Block number is: ${i}</div>`);
+// };
 
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
 // let i = 0;
-// while ( i < 20 ){
-//     document.write('<h1> Yes, you can </h1>');
+//
+// while (i < 20) {
+//     document.write(`<h1>Some text</h1>`);
 //     i++;
 // }
+// ;
 
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
-// let i = 0;
-// while (i < 20){
-//     document.write(`<h1> ${i} NEXT </h1>`);
+// let i = 1;
+//
+// while (i <= 20) {
+//     document.write(`<h1>line number: ${i}</h1>`);
 //     i++;
-// }
+// };
 
 //
-// // - Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
-// let array = [1,2,3,4,5,6,7,8,9,10];
-// for (let i = 0; i <array.length; i++){
-//     console.log(`${array[i]}`)
-// }
-
-// - Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
-// let array = ['yes', 'no', 'yes', 'no', 'yes', 'no', 'yes', 'no', 'yes', 'no',];
-// for (i = 0; i < array.length; i++){
-//     console.log(`${array[i]}`)
-// }
-
-// - Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
-// let array = [true, 99, false, 'string', 'be more productive', 1997, false, 'repeat pls', 11, 07];
-// for (i = 0; i < array.length; i++){
-//     console.log(`${array[i]}`)
-// }
-
-// - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
-// let array = [true, 99, false, 'string', 'be more productive', 1997, false, 'repeat pls', 11, 07];
-// for (i = 0; i < array.length; i++) {
-//     if (typeof array[i] === 'boolean') {
-//         console.log(array[i]);
-//     }
-// }
-
-// - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
-// let array = [true, 99, false, 'string', 'be more productive', 1997, false, 'repeat pls', 11, 07];
-// for (i = 0; i < array.length; i++) {
-//     if (typeof array[i] === 'number') {
-//         console.log(array[i]);
-//     }
-// }
-
-// - Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
-// let array = [true, 99, false, 'string', 'be more productive', 1997, false, 'repeat pls', 11, 07];
-// for (i = 0; i < array.length; i++) {
-//     if (typeof array[i] === 'string') {
-//         console.log(array[i]);
-//     }
-// }
+// - Використовуючи данні з масиву, за допомоги document.write та циклу
+// побудувати структуру по шаблону
+// Масив:
+//
+//     let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+//
+// ШАБЛОН:
+//     <ul>
+//         <li>ITEM OF ARRAY</li>
+//         <!--
+//             і тд інші об'єкти масиву
+//              ...
+//              ...
+//              ...
+//         -->
+//     </ul>
+//
+// замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву
+// let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+//
+// document.write(`<ul>`);
+//
+// for (item of listOfItems){
+//     document.write(`<li>${item}</li>`);
+// };
+//
+// document.write(`</ul>`);
+//
+// -----------------------------------------------
+//
+//     Використовуючи данні з масиву, за допомоги document.write та циклу
+// побудувати структуру по шаблону  Зробити адекватну стилізацію
+// Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
+//
+// let products = [
+//     {
+//         title: 'milk',
+//         price: 22,
+//         image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
+//     },
+//     {
+//         title: 'juice',
+//         price: 27,
+//         image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+//     },
+//     {
+//         title: 'tomato',
+//         price: 47,
+//         image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
+//     },
+//     {
+//         title: 'tea',
+//         price: 15,
+//         image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
+//     },
+// ];
+//
+// ШАБЛОН
+// <div class="product-card">
+//     <h3 class="product-title">TITLE. Price - PRICE</h3>
+// <img src="IMAGE" alt="" class="product-image">
+// </div>
+// Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту
+// let products = [
+//     {
+//         title: 'milk',
+//         price: 22,
+//         image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
+//     },
+//     {
+//         title: 'juice',
+//         price: 27,
+//         image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+//     },
+//     {
+//         title: 'tomato',
+//         price: 47,
+//         image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
+//     },
+//     {
+//         title: 'tea',
+//         price: 15,
+//         image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
+//     },
+// ];
+// for (const product of products) {
+//
+//     document.write(
+//         `<div class="product-card">
+//                 <h3 class="product-title">${product.title} Price - ${product.price}</h3>
+//                 <img src="${product.image}" alt="" class='product-image'>
+//         </div>`);
+//
+// };
 
 //
-// - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
-// let array = [];
-// array[0] = 'i can do it faster';
-// array[1] = true;
-// array[2] = 911199;
-// array[3] = false;
-// array[4] = 'guilty';
-// array[5] = 'low';
-// array[6] = 000;
-// array[7] = 60;
-// array[8] = false;
-// array[9] = 'i';
-// for (i = 0; i < array.length; i++){
-//     console.log(`${array[i]}`)
-// }
-
-// - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
-// for (i = 0; i < 10; i++) {
-//     console.log('one ' + i + '');
-//     document.write('one' + i + '');
-// }
-
-// - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
-// for (i = 0; i < 100; i++){
-//     console.log('one ' + i + '');
-//     document.write('one' + i + '');
-// }
-
-// - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
-// for (i = 0; i < 100; i += 2) {
-//     console.log('one ' + i + '');
-//     document.write('one' + i + '');
-// }
-
-// - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
-// for (i = 0; i < 100; i++) {
-//     if (i % 2 === 0) {
-//         console.log('one ' + i + '');
-//         document.write('one' + i + '');
-//     }
 //
-// }
-
-// - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
-// for (i = 0; i < 100; i++) {
-//     if (i % 2 === 1) {
-//         console.log('one ' + i + '');
-//         document.write('one' + i + '');
-//     }
 //
+// --------------------
+//     є масив
+// let users = [
+//     {name: 'vasya', age: 31, status: false},
+//     {name: 'petya', age: 30, status: true},
+//     {name: 'kolya', age: 29, status: true},
+//     {name: 'olya', age: 28, status: false},
+//     {name: 'max', age: 30, status: true},
+//     {name: 'anya', age: 31, status: false},
+//     {name: 'oleg', age: 28, status: false},
+//     {name: 'andrey', age: 29, status: true},
+//     {name: 'masha', age: 30, status: true},
+//     {name: 'olya', age: 31, status: false},
+//     {name: 'max', age: 31, status: true}
+// ];
+// за допомоги циклу вивести:
+//     - користувачів зі статусом true
+// for (let user of users) {
+//     if (user.status) {
+//         console.log(user);
+//     }
+// }
+// - користувачів зі статусом false
+// for (let user of users){
+//     if (!user.status){
+//         console.log(user)
+//     }
+// }
+// - користувачів які старші за 30 років
+// for (let user of users){
+//     if (user.age > 30){
+//         console.log(user)
+//     }
 // }
