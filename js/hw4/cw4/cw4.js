@@ -76,21 +76,37 @@
 // }
 // console.log(arithmeticMean(array));
 
-// - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
-// let array = [1, 21, 32, 43, 54];
-
+// - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше,
+// а виводить найбільше (Math використовувати заборонено);
+// let array = [1, 21, 32, 43, 54, 166, 0.1];
+//
+// let minMaxShower = (arr) =>{
+//     let min = arr[0];
+//     let max = arr[0];
+//
+//     for (let arrElement of arr) {
+//         if (arrElement > max){
+//             max = arrElement;
+//         } else if (arrElement < min) {
+//             min = arrElement
+//         }
+//     }
+//     console.log(max);
+//     return min;
+// };
+// console.log(minMaxShower(array));
 
 // - створити функцію яка заповнює масив рандомними числами
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
-// function randomArr(length) {
-//     let array = [];
-//     for (let i = 0; i < length; i++) {
-//         array[i] = Math.round(Math.random() * 100)
-//     }
-//     return array;
-// }
+// let emptyArr = [];
 //
-// console.log(randomArr(100));
+// let randomNumCreator = (arr,amountOfNUmbers,diapazon) => {
+//     for (let i = 0; i < amountOfNUmbers; i++) {
+//       arr[i] =  Math.round(Math.random()*diapazon);
+//     };
+// };
+// randomNumCreator(emptyArr,10,1000);
+// console.log(emptyArr);
 
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
 // function randomArr(length, limit) {
@@ -106,12 +122,14 @@
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 // let array = [1, 21, 32, 43, 54];
 //
-// function opposite() {
-//     for (let i = array.length - 1; i >= 0; i--) {
-//
-//         console.log(array[i])
-//
+// let oppoArr = (arr) => {
+//     let newArr = [];
+//    let i = arr.length -1;
+//     while (i >= 0){
+//         newArr.push(arr[i]);
+//         i--;
 //     }
+//     return newArr;
 // }
 //
-// opposite();
+// console.log(oppoArr(array));
