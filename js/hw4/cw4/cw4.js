@@ -78,22 +78,7 @@
 
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
 // let array = [1, 21, 32, 43, 54];
-// function maxNumber(arr) {
-//     let min = arr[0];
-//     let max = arr[0];
-//     for (let element of arr) {
-//         if (element < min) {
-//             min = element;
-//         }else if (element > max){
-//
-//             max = element;
-//         }
-//     }
-//     console.log(max);
-//     return min;
-// }
-//
-// console.log(maxNumber(array));
+
 
 // - створити функцію яка заповнює масив рандомними числами
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
