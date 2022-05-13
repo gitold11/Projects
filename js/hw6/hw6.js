@@ -1,76 +1,123 @@
 // - Знайти та вивести довижину настипних стрінгових значень
 // 'hello world', 'lorem ipsum', 'javascript is cool'
-// let str = 'hello world';
-// let str2 = 'lorem ipsum'
-// let str3 = 'javascript is cool'
-// console.log(str.length);
-// console.log(str2.length);
-// console.log(str3.length);
+// let hw = 'hello world';
+// console.log(hw.length);
+//
+// let li = 'lorem ipsum';
+// console.log(li.length);
+//
+// let jic = 'javascript is cool';
+// console.log(jic.length);
 
 // - Перевести до великого регістру наступні стрінгові значення
 // 'hello world', 'lorem ipsum', 'javascript is cool'
-// let str = 'hello world';
-// let str2 = 'lorem ipsum'
-// let str3 = 'javascript is cool'
-// console.log(str.toUpperCase());
-// console.log(str2.toUpperCase());
-// console.log(str3.toUpperCase());
+// let hw = 'hello world';
+// console.log(hw.toUpperCase());
+//
+// let li = 'lorem ipsum';
+// console.log(li.toUpperCase());
+//
+// let jic = 'javascript is cool';
+// console.log(jic.toUpperCase());
 
 // - Перевести до нижнього регістру настипні стрінгові значення
 // 'HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'
-// let str = 'HELLO WORLD'
-// let str2 = 'LOREM IPSUM'
-// let str3 = 'JAVASCRIPT IS COOL'
-// console.log(str.toLowerCase());
-// console.log(str2.toLowerCase());
-// console.log(str3.toLowerCase());
+// let hw = 'hello world';
+// console.log(hw.toLowerCase());
+//
+// let li = 'lorem ipsum';
+// console.log(li.toLowerCase());
+//
+// let jic = 'javascript is cool';
+// console.log(jic.toLowerCase());
 
 // - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
-// let str = ' dirty string   ';
+// let str = ' dirty string';
 // console.log(str.trim());
 
-//
-//
 // - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
-// let str = 'Каждый охотник желает знать';
-// let arr = stringToarray(str);
-// document.writeln(arr); // ['Каждый', 'охотник', 'желает', 'знать']
-// let stringToarray = (str) => {
-//     return str.split(' ');
-// };
-// console.log(stringToarray('Каждый охотник желает знать'));
+//     let str = 'Ревуть воли як ясла повні';
+// let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
+// let str = 'Ревуть воли як ясла повні';
+// console.log(str.split(' '));
+//
+// - є масив чисел [10,8,-7,55,987,-1011,0,1050,0] . за допомоги map та
+// колбеку перетворити всі об'єкти в масиві на стрінгові.
+// let arr = [10,8,-7,55,987,-1011,0,1050,0];
+// console.log(arr.map(num => {
+//     return (num.toString());
+// }));
+
+// - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його
+// від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
+//     let nums = [11,21,3];
+// sortNums(nums,'ascending') // [3,11,21]
+// sortNums(nums,'descending') // [21,11,3]
+// let nums = [11,21,3];
+//
+// let sortNums = (direction, arr) => {
+//     if(direction === 'ascending'){
+//         arr.sort((a,b) => {
+//             return a-b;
+//         })
+//     }else if (direction === 'descending'){
+//         arr.sort((a,b) =>{
+//             return b-a;
+//         })
+//     }
+//     return arr;
+// }
+//
+// console.log(sortNums('descending', nums));
+//
+// - є масив
+// let coursesAndDurationArray = [
+//     {title: 'JavaScript Complex', monthDuration: 5},
+//     {title: 'Java Complex', monthDuration: 6},
+//     {title: 'Python Complex', monthDuration: 6},
+//     {title: 'QA Complex', monthDuration: 4},
+//     {title: 'FullStack', monthDuration: 7},
+//     {title: 'Frontend', monthDuration: 4}
+// ];
+// -- відсортувати його за спаданням за monthDuration
+// -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
+// let coursesAndDurationArray = [
+//     {title: 'JavaScript Complex', monthDuration: 5},
+//     {title: 'Java Complex', monthDuration: 6},
+//     {title: 'Python Complex', monthDuration: 6},
+//     {title: 'QA Complex', monthDuration: 4},
+//     {title: 'FullStack', monthDuration: 7},
+//     {title: 'Frontend', monthDuration: 4}
+// ];
+// let array = [];
+//
+// let coursesFilter = (arr, amountOfMonth, arrayForPushing) => {
+//     arr.filter(course => {
+//         if (course.monthDuration > amountOfMonth) {
+//             arrayForPushing.push(course);
+//
+//             arrayForPushing.sort((a, b) => {
+//                 return a.monthDuration - b.monthDuration;
+//             })
+//
+//         }
+//     })
+// }
+//
+// coursesFilter(coursesAndDurationArray, 5, array);
+// console.log(array);
 
 //
-//
-// - Напишіть функцію delete_characters(str, length), яка повертає підрядок, що складається із зазначеної кількості символів.
-//     let str = 'Каждый охотник желает знать';
-// document.writeln(delete_characters(str, 7)); // Каждый
-// let delete_characters = (str) => {
-//     return str.substr(0,7);
-// };
-// console.log(delete_characters('Каждый охотник желает знать'));
-
-//
-// - Напишіть функцію insert_dash(str), яка приймає рядок str як аргумент і вставляє тире (-) між словами. При цьому всі символи рядка необхідно перевести у верхній регістр.
-//     let str = "HTML JavaScript PHP";
-// document.writeln(insert_dash(str)); // 'HTML-JAVASCRIPT-PHP'
-// let insert_dash = (str) => {
-//     return str.replaceAll(' ', '-').toUpperCase();
-// };
-// console.log(insert_dash("HTML JavaScript PHP"));
-
-//
-// - Напишіть функцію, яка приймає рядок як аргумент і перетворює регістр першого символу рядка з нижнього регістру у верхній.
-//
-// let firstChar = (str) =>{
-//     return str[0].toUpperCase() + str.slice(1);
-// };
-// console.log(firstChar('not a number'));
-
+// описати колоду карт
+// - знайти піковий туз
+// - всі шістки
+// - всі червоні карти
+// - всі буби
+// - всі трефи від 9 та більше
 //
 //
-// - Напишіть функцію capitalize(str), яка повертає рядок, у якому кожне слово починається з великої літери.
-// let capitalize = (str) => {
-//     return str.split(' ').map(wrd=>wrd.charAt(0).toUpperCase()+wrd.slice(1)).join(' ');
-// };
-// console.log(capitalize('nothing nothing nothing nothing'));
+// {
+//     cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
+//         value: '', // '6'-'10', 'ace','jack','queen','king','joker'
+//     color:'', // 'red','black'
+// }
