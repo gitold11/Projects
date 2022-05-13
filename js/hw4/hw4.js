@@ -1,107 +1,108 @@
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
-// function rectangleArea(a,b){
-//     let res = a * b;
-//     return res;
+// let triangleS = (a,b) => {
+//     return a*b
 // }
-// console.log(rectangleArea(12,15));
+// console.log(triangleS(8, 6));
 
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
-// function roundArea (p,r){
-//     let s = p * r*2;
-//     return s;
-// }
-// console.log(roundArea(3.14,2))
+// let roundS = (r) => {
+//     return 2*3.14*r;
+// };
+// console.log(roundS(8));
 
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
-// function cylinderArea(p, r, h) {
-//     let s = 2*p * r * h;
-//     return s;
-// }
-// console.log(cylinderArea(3.14,10,20));
+// let cylinderS = (h,r) => {
+//     return 2*3.14*r*h;
+// };
+// console.log(cylinderS(10, 6));
 
 // - створити функцію яка приймає масив та виводить кожен його елемент
-// let array = [10, 'hello', 30, 'its', 40, 'me'];
+// let arr = [2,3,4,5,6,99];
 //
-// function arrayShower(array) {
-//     for (i = 0; i < array.length; i++){
-//         console.log(array[i])
-//     }
-//         }
-// arrayShower(array);
+// let shower = (arr) => {
+//     for (let arrElement of arr) {
+//         console.log(arrElement);
+//     };
+// };
+//
+// shower(arr);
 
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
-// function text(typeHere){
-//     return typeHere;
-// }
-// console.log(text('Hello Okten'));
+// let paragraphCreator = (text) => {
+//    return  document.write(`<P>${text}</P>`);
+// };
+//
+// paragraphCreator('hgvhgfhgcgchv');
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
-// function textCreator(text){
-//     document.write(`<ul>`)
-//     document.write(`<li>${text}</li>`)
-//     document.write(`<li>${text}</li>`)
-//     document.write(`<li>${text}</li>`)
-//     document.write(`</ul>`)
-// }
-// textCreator('HI!');
+// let listCreator = (text) => {
+//     document.write(`<ul>
+//             <li>${text}</li>
+//             <li>${text}</li>
+//             <li>${text}</li>
+//     </ul>`);
+// };
+// listCreator('Goovee')
 
-// - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
-// function textCreator(text, size) {
+// - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент
+// всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
+// let cycleListCreator = (text, size) => {
 //     document.write(`<ul>`)
-//     for (i = 0; i < size; i++){
-//         document.write(`<li>${text}</li>`)
-//     }
-//         document.write(`</ul>`)
-// }
-// textCreator('ALLOHA!!!',3);
+//     for (let i = 0; i < size; i++) {
+//             document.write(`<li>${text}</li>`)
+//         };
+//     document.write(`</ul>`)
+// };
+// cycleListCreator('seeeyaa',10);
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
-// let array = [10, 'hello', 30, 'its', 40, 'me', true, false];
+// let arr = [true, false, 66, 'hello'];
 //
-// function arrayShower(array) {
+// let primitiveListBuilder = (arr) => {
 //     document.write(`<ul>`)
-//     for (i = 0; i < array.length; i++) {
-//         document.write(`<li>${array[i]}</li>`)
+//     for (let arrElement of arr) {
+//         document.write(`<li>${arrElement}</li>`);
 //     }
-//     document.write(`</ul>`)
-// }
-// arrayShower(array);
+//     document.write(`</ul>`);
+// };
+// primitiveListBuilder(arr);
 
-//
-// - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
-// let simpsons = [
-//     {
-//         id: 'Bart',
-//         surname: 'Simpson',
-//         age: 10,
-//     },
-//     {
-//         id: 'Homer',
-//         surname: 'Simpson',
-//         age: 40,
-//     },
-//     {
-//         id: 'Marge',
-//         surname: 'Simpson',
-//         age: 38,
-//     },
-//     {
-//         id: 'Lisa',
-//         surname: 'Simpson',
-//         age: 9,
-//     },
-//     {
-//         id: 'Maggie',
-//         surname: 'Simpson',
-//         age: 1,
-//     },
+// - створити функцію яка приймає масив об'єктів з наступними полями id,name,age ,
+// та виводить їх в документ. Для кожного об'єкту окремий блок.
+// let objArr = [
+//     {id: 8},
+//     {name: 'Henry'},
+//     {age: 55}
 // ];
-// function blockCreator(simpsons){
-//     document.write('<div>')
-//     for (let i = 0; i < simpsons.length; i++) {
-//         let item = simpsons[i];
-//         document.write(`<h2>${item.id} ${item.surname} ${item.age} </h2> `)
+//
+// let shower = (arr) => {
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let arrKey in arr[i]) {
+//             document.write(`<div>${arrKey} - ${arr[i][arrKey]}</div>`);
+//         };
+//     };
+// };
+//
+// shower(objArr);
+// - створити функцію яка повертає найменьше число з масиву
+// let numArr = [11, 22, 3, 4, 5, 6, 1, 9,0.1, 99];
+//
+// let smallestNumFinder = (arr) => {
+//    return Math.min(...arr);
+// };
+//
+// console.log(smallestNumFinder(numArr));
+
+// - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його.
+// Приклад [1,2,10]->13
+// let numArr = [11, 22, 3, 4, 5, 6, 1, 9,0.1, 99];
+//
+// let adder = (arr) => {
+//     let s = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         s+= arr[i];
 //     }
-//     document.write('</div>')
-// }
-// blockCreator(simpsons);
+//     return s;
+// };
+//
+// console.log(adder(numArr));
